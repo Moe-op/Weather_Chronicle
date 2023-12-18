@@ -5,37 +5,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="styles/reset.css" />
+  <!--<link rel="stylesheet" href="styles/reset.css" /> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
   <title>Weather Dashboard</title>
 </head>
 
-<body>
-  <header class="container-fluid text-center text-white bg-dark p-2 weather-header">
+<body class="bg-light">
+
+  <header class="container-fluid text-center text-white bg-dark p-2 mb-4">
     <h1>Weather Dashboard</h1>
   </header>
 
-  <!-- max-width for ultra wide resolutions -->
-  <div class="container-fluid" style="max-width: 1400px">
+  <div class="container">
     <div class="row">
       <aside class="col-lg-3 pb-3">
         <h2 id="form-heading" class="mt-1 h3 form-label">
           Search for a City:
         </h2>
         <form id="search-form" class="form">
-          <div class="form-inline form-group">
-            <div class="input-group">
-              <input class="form-input weather-search" type="text" id="search-input" placeholder="London"
-                aria-labelledby="form-heading" aria-controls="today forecast" />
-              <div class="input-group-append">
-                <button type="submit" class="btn search-button" id="search-button" aria-label="submit search">
-                  Search
-                </button>
-                <hr class="hr weather-hr" />
-              </div>
-            </div>
+          <div class="form-group">
+            <input class="form-control weather-search" type="text" id="search-input" placeholder="London"
+              aria-labelledby="form-heading" aria-controls="today forecast" />
           </div>
+          <button type="submit" class="btn btn-primary btn-block" id="search-button">Search</button>
         </form>
-        <div class="list-group" id="history"></div>
+        <div class="list-group mt-3" id="history"></div>
       </aside>
 
       <div class="col-lg-9 pb-3">
@@ -49,7 +45,17 @@
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7ofJyZaJw4W7gceGj5C8jsGpkPHkpUf9GoE/cXe8UzqLeL+fYGpJAiI4E2MUJo8"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6jQ9PiO+CWtJcbklXybPFXj2TUp8y/KJbqlkJ"
+    crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
 
 </html>
+

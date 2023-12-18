@@ -1,0 +1,71 @@
+/* Header styling */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    background-color: #343a40;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  /* Form and search history styling */
+  aside {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .weather-search {
+    width: 100%;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .list-group-item {
+    cursor: pointer;
+  }
+  
+  /* Weather display styling */
+  #today {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #forecast {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .col-md-2 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 767px) {
+    aside {
+      margin-bottom: 20px;
+    }
+  }
+  
